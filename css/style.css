@@ -1,7 +1,10 @@
 body{
-	background-color:aqua;
+	font-family: Courier, sans-serif;
+	background-color:black;
 }
-h1{color:black;
+h1{color:#2aff31;
 }
-p{color:purple;
+
+p{font-family: Courier, sans-serif;
+	color:white;
 }
