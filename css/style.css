@@ -1,21 +1,11 @@
 body{
-	background-color: black;
+	text-align: center;
+	background-color: #000;
+	font-family: "Arimo";
+	font-size: 20px;
+	color: #fff;
+
 }
 
-h1{
-	font-family: "Vollkorn";
-	font-size: 30px;
-	color: white;
-}
-
-h3{
-	font-family: "Vollkorn";
-	font-size: 30px;
-	color: white;
-}
-
-p{
-	font-family: "Vollkorn";
-	font-size: 30px;
-	color: white;
-}
+h1{font-size: 40px;
+	}
