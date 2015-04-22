@@ -3,13 +3,19 @@ body{
 }
 
 h1{
-	font-family: "Arial";
-	font-size: 40px;
+	font-family: "Vollkorn";
+	font-size: 30px;
+	color: white;
+}
+
+h3{
+	font-family: "Vollkorn";
+	font-size: 30px;
 	color: white;
 }
 
 p{
-	font-family: "Arial";
-	font-size: 20px;
+	font-family: "Vollkorn";
+	font-size: 30px;
 	color: white;
 }
