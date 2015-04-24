@@ -1,14 +1,18 @@
 body{
 	text-align: center;
-	font-family: "Helvetica";
+	font-family:'Gudea';
+  	font-style: normal;
+  	font-weight: 400;
+  	text-transform: uppercase;
 	font-size: 20px;
 	color: white;
-	background: black
+	background: black;
 }
 
 h1{   
-   color: white
+   color: white;
    text-transform: uppercase;
-   font-family: "Helvetica";
-   font-size: 40px;}
-	}
+   font-family: "Gudea";
+   font-size: 40px;
+}
+
