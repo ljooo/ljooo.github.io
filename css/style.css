@@ -8,6 +8,7 @@ body{
 	background: url("http://mediad.publicbroadcasting.net/p/shared/npr/201310/200480986.jpg");
     background-size: cover;
 }
+a{color:black;}
 
 h1{   
    color: black;
@@ -22,6 +23,7 @@ h1{
    color: white;
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
+   font-variant: small-caps;
    padding: 10px;
 }
 
@@ -38,10 +40,16 @@ h2{
 }
 
 img {
-    max-width:30%;
+    max-width:15%;
     height:auto;
 }
+
+p.pos_fixed {
+    position: fixed;
+    top: 50px;
+    right: 50px;
 }
+
 
 
 
