@@ -1,6 +1,6 @@
 body{
-	background-image: url("images/ljjord2008.jpg") repeat ; 
-	background-size: auto;
+	background: url("images/ljjord2008.jpg");
+	background-repeat: repeat;
 }
 
 h1{   
