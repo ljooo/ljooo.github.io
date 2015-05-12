@@ -1,69 +1,65 @@
-body{
-	background: url("images/ljjord2008.jpg");
-	background-repeat: repeat;
-}
 
 h1{   
-   color: white;
+   color: rgb(129,214,164);
    font-family: 'Merriweather Sans', sans-serif;
    font-size: 60px;
    letter-spacing: 20px;
    text-transform: uppercase;
    text-align: center;
-   padding: 80px;
+   background-color: rgba(255, 255, 255, 0.35);
+   padding: 205px 0px 206px;
+   margin: 0px;
 }
 
 h2{   
-   color: black;
+   color: white;
    font-family: 'Merriweather Sans', sans-serif;
    font-size: 60px;
    letter-spacing: 10px;
    text-align: center;
-   padding: 10px;
 }
 
-h3{
-	color: white;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 60px;
-   letter-spacing: 20px;
-   text-transform: uppercase;
-   text-align: center;
-   padding: 80px;
+ul{
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
 
-h4{
+li a{
 	color: black;
 	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 60px;
-   letter-spacing: 20px;
+	font-size: 10px;
    text-transform: uppercase;
    text-align: center;
-   padding: 10px;
+   line-height: 2em;
+   padding: 200px;
+   font-weight: bold;
+   line-height: 10em;
+   letter-spacing: 2px;
+
 }
 
-h5{
-	color: white;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 60px;
-   letter-spacing: 20px;
-   text-transform: uppercase;
-   text-align: center;
-   padding: 80px;
+#hero {
+	background: url("images/ljjord2008.jpg");
+	background-size: 50%;
+	height:486px;
+	margin-bottom: 30px;
+	overflow: auto;
+	position: relative;
+	height: 70vh;
 }
 
-h6{
-	color: black;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 60px;
-   letter-spacing: 20px;
-   text-transform: uppercase;
-   text-align: center;
+#date {
+	padding: 40px 0px;
+	background-color: rgb(129,214,164);
+	height: 30vh;
+	
 }
 
-
-
-
+div {
+	width: 90%;
+	margin: 0 auto;
+}
 
 
 
