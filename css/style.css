@@ -7,7 +7,7 @@ h1{
    text-transform: uppercase;
    text-align: center;
    background-color: rgba(255, 255, 255, 0.35);
-   padding: 205px 0px 206px;
+   padding: 206px 0px 220px;
    margin: 0px;
 }
 
@@ -40,11 +40,11 @@ li a{
 }
 
 #hero {
-	background: url("images/ljjord2008.jpg");
+	background-image: url("images/ljojyx2.jpg");
 	background-size: 50%;
 	height:486px;
 	margin-bottom: 30px;
-	overflow: auto;
+	overflow: hidden;
 	position: relative;
 	height: 80vh;
 }
