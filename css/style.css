@@ -1,4 +1,9 @@
 
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 h1{   
    color: rgb(129,214,164);
    font-family: 'Merriweather Sans', sans-serif;
@@ -7,8 +12,9 @@ h1{
    text-transform: uppercase;
    text-align: center;
    background-color: rgba(255, 255, 255, 0.35);
-   padding: 206px 0px 220px;
+   padding: 200px 100px 200px;
    margin: 0px;
+
 }
 
 h2{   
@@ -19,41 +25,51 @@ h2{
    text-align: center;
 }
 
-ul{
-	padding: 0;
-	margin: 0;
-	text-align: center;
-}
-
-li a{
+.deets {
 	color: black;
 	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 10px;
+	font-size: 40px;
    text-transform: uppercase;
    text-align: center;
    line-height: 2em;
-   padding: 200px;
    font-weight: bold;
-   line-height: 10em;
    letter-spacing: 2px;
 
 }
 
+h3 {
+	margin: 10px;
+}
+
+p { 
+	font-size: 15px;
+	font-family:'Merriweather Sans', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.heads{
+	font-size: 30px;	
+	font-family:'Merriweather Sans', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgb(129,214,164);
+}
+
 #hero {
 	background-image: url("images/ljojyx2.jpg");
-	background-size: 50%;
+	background-size: 74.5%;
 	height:486px;
 	margin-bottom: 30px;
 	overflow: hidden;
 	position: relative;
-	height: 80vh;
+	height: 54vh;
 }
 
 #date {
-	padding: 40px 0px;
+	padding: 60px 0px;
 	background-color: rgb(129,214,164);
-	height: 20vh;
-	
+	height: 35vh;
 }
 
 div {
