@@ -6,20 +6,20 @@ html, body {
 
 h1{   
    color: rgb(129,214,164);
-   font-family: 'Merriweather Sans', sans-serif;
+   font-family: "HelveticaNeue-Medium", sans-serif;
    font-size: 60px;
    letter-spacing: 20px;
    text-transform: uppercase;
    text-align: center;
    background-color: rgba(255, 255, 255, 0.35);
-   padding: 200px 100px 200px;
+   padding: 150px 100px 200px;
    margin: 0px;
 
 }
 
 h2{   
    color: white;
-   font-family: 'Merriweather Sans', sans-serif;
+   font-family: "HelveticaNeue-Medium", sans-serif;
    font-size: 60px;
    letter-spacing: 10px;
    text-align: center;
@@ -27,33 +27,27 @@ h2{
 
 .deets {
 	color: black;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: "HelveticaNeue-Medium", sans-serif;
 	font-size: 40px;
-   text-transform: uppercase;
    text-align: center;
-   line-height: 2em;
    font-weight: bold;
    letter-spacing: 2px;
+   padding: 1em 0em;
 
 }
 
 h3 {
-	margin: 10px;
+	padding: 0;
+	margin: 0;
 }
 
 p { 
 	font-size: 15px;
-	font-family:'Merriweather Sans', sans-serif;
-	text-transform: uppercase;
+	font-family: "HelveticaNeue-Medium", sans-serif;
 	text-align: center;
-}
-
-.heads{
-	font-size: 30px;	
-	font-family:'Merriweather Sans', sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-	color: rgb(129,214,164);
+	padding: .8em 0;
+	margin: 5px 400px;
+	text-align: justify;
 }
 
 #hero {
@@ -67,9 +61,17 @@ p {
 }
 
 #date {
-	padding: 60px 0px;
+	padding: 70px 0px;
 	background-color: rgb(129,214,164);
-	height: 35vh;
+	height: 25vh;
+	text-transform: bold;
+}
+
+p.heads{
+	font-size: 35px;
+	color: rgb(129,214,164);
+	text-align: center;
+	text-transform: uppercase;
 }
 
 div {
