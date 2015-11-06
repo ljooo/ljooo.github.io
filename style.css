@@ -7,16 +7,13 @@
 
 html{
 	font-size:10px;
-/*	height: 100%;*/
 }
 
 body{
 	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 	background-color: #D6D3F0;
-	
 	color:#0B3142;
 	text-align: center;
-/*	height:100%;*/
 }
 
 header{
@@ -91,11 +88,9 @@ footer{
 }
 
 footer{
-	background:url(assets/imgs/IMG_9695.JPG) no-repeat center center scroll;
+	background:url(assets/imgs/IMG_9593.JPG) no-repeat center center scroll;
+	/*background:url(assets/imgs/IMG_9695.JPG) no-repeat center center scroll;*/
 	background-size: cover;
-/*	max-width: 960px;
-	margin:auto;*/
-	color:#107095;
 	height:100vh;
 	padding-top:50vh;
 }
@@ -103,7 +98,7 @@ footer{
 footer h2,
 footer p,
 footer .arrow_link{
-	color:#9A98B0;
+	color:#FDFCF3;
 }
 figure{
 	width:50%;
@@ -216,8 +211,6 @@ address a:hover{
 
 .col3{
 	width:30.33%;
-	/*min-width: 324px;*/
-	/*max-width: 458px;*/
 	margin: 0 1.5%;
 	padding:1.5%;
 	float:left;
@@ -414,8 +407,6 @@ address a:hover{
 	.col3{
 		width:80%;
 		float:none;
-		/*min-width: auto;*/
-		/*max-width: 375px;*/
 		margin:0 auto;
 		padding:0;
 	}
@@ -541,7 +532,6 @@ address a:hover{
 		padding: 0 5%;
 		margin:auto;
 		float: none;
-		/*min-width: 250px;*/
 	}
 
 	.travel_txt{
@@ -603,8 +593,6 @@ address a:hover{
 	#accommodations .col3{
 		width:100%;
 		padding: 1% 6%;
-		
-		/*min-width: auto;*/
 	}
 
 	#accommodations a:nth-of-type(2) .col3{
