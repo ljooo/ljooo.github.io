@@ -91,12 +91,20 @@ footer{
 }
 
 footer{
-	background:url(assets/imgs/saturday.JPG) no-repeat center center scroll;
+	background:url(assets/imgs/IMG_9695.JPG) no-repeat center center scroll;
 	background-size: cover;
+/*	max-width: 960px;
+	margin:auto;*/
 	color:#107095;
 	height:100vh;
+	padding-top:50vh;
 }
 
+footer h2,
+footer p,
+footer .arrow_link{
+	color:#9A98B0;
+}
 figure{
 	width:50%;
 	padding: 0 1%;
@@ -641,14 +649,3 @@ address a:hover{
 		font-size: 7.25em;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
