@@ -68,6 +68,9 @@ a:hover{
 a:active{
 	color:inherit;
 }
+em{
+	border-bottom:1px solid #B7CDD5;
+}
 
 main section{
 	padding:2em 0;
@@ -334,6 +337,10 @@ address a:hover{
 	color:#107095;
 	height: auto;
 	padding:3em 0 0;
+}
+
+#accommodations h2 + p{
+	color: #B7CDD5;
 }
 
 #accommodations .col3{
