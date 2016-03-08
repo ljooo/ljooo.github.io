@@ -12,7 +12,6 @@ html{
 body{
 	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 	background-color: #D6D3F0;
-	/*font-size: 16px;*/
 	color:#0B3142;
 	text-align: center;
 }
@@ -20,6 +19,9 @@ body{
 header{
 	position: relative;
 	top:40%;
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
 
@@ -230,7 +232,7 @@ address a:hover{
 /*------------------------------------------ landing */
 
 #landing{
-	background:url(assets/imgs/ljpattern400t.png) repeat;
+	background:url("assets/imgs/ljpattern400t.png") repeat;
 	background-color: #F4F3FD;
 	height:100vh;
 	position: relative;
@@ -298,12 +300,11 @@ address a:hover{
 #toast h2, 
 #afterparty h2{
 	font-size:6em;
-	   padding: .7em 0 0.5em;
+	padding: .7em 0 0.5em;
 }
 
 #wedding h2{
 	font-size:11em;
-/*	margin:.25em 0 .15em;*/
 }
 
 
