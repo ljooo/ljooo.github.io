@@ -12,6 +12,7 @@ html{
 body{
 	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 	background-color: #D6D3F0;
+	/*font-size: 16px;*/
 	color:#0B3142;
 	text-align: center;
 }
@@ -23,8 +24,7 @@ header{
 }
 
 h1, 
-h2,
-h3{
+h2{
 	font-family: 'LearningCurve';
 }
 
@@ -34,40 +34,43 @@ h1{
 }
 
 h2{
-	font-size: 11em;
+	font-size: 11em;    
+	padding: 0 0 3%;
+}
+
+h3{
+	font-size: 2.4em;
+	line-height: 1.4em;
+	margin:0 0 1em;
+	text-align: center;
 }
 
 h4{
-	margin:0 0 1em;
+
 	font-size:2em;
 	line-height: 1.4em;
 	text-align: center;
 }
 
 p{
-	font-size:1.8em;
+	font-size:1.6em;
 	line-height: 1.6em;
-	margin:1.5em 0;
-	text-align: inherit;
+	margin: 0 0 1.5em;
 }
 
-a:link{
+p a{
 	border-bottom: 1px dotted;
+}
+
+p a:hover{
+	border-bottom: 2px solid;
+}
+
+a{
 	text-decoration:none;
 	color:inherit;
 }
 
-a:visited{
-	color:inherit;
-}
-
-a:hover{
-	border-bottom: 2px solid;
-}
-
-a:active{
-	color:inherit;
-}
 em{
 	border-bottom:1px solid #B7CDD5;
 }
@@ -83,29 +86,27 @@ main h4{
 	font-size:2.2em;
 }
 
-section, 
-footer{
+section{
 	width:100%;
-	padding:3em 0; 
+	padding:5% 0 10%;
 	position: relative
 }
 
 footer{
 	background:url(assets/imgs/IMG_9593.JPG) no-repeat center center scroll;
-	/*background:url(assets/imgs/IMG_9695.JPG) no-repeat center center scroll;*/
 	background-size: cover;
+	position: relative;
 	height:100vh;
-	padding-top:50vh;
+	padding: 50vh 5% 0;
 }
 
-footer h2,
-footer p,
-footer .arrow_link{
-	color:#FDFCF3;
+footer h2{
+	line-height: .7em;
 }
+
 figure{
 	width:50%;
-	padding: 0 1%;
+	padding:3% 1% 0;
 	float:left;
 }
 
@@ -143,13 +144,12 @@ address{
 	line-height: 1.4em;
 	letter-spacing: .09em;
 	color:inherit;
-	
 }
 
 address a{
 	border-bottom: 1px dotted;
+	line-height: 1.75em;
 }
-
 
 address a:hover{
 	border-bottom: 2px solid;
@@ -168,41 +168,23 @@ address a:hover{
 	height: 0;
 }
 
-.wrap{
-	width:90%;
-	margin: 3em auto 0;
-}
-
-
-.note{
-	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
-	font-size: 1.6em;
-	margin: 0;
-	line-height: 1.6em;
-	margin:0;
-	text-align: inherit;
-}
-
 .arrow{
+	display: block;
 	font-family: sans-serif;
 	font-size: 3em;
 	font-weight: lighter;
-	line-height: .8em;
-	margin:.05em;
+	line-height: 1.25em;
 }
 
-.arrow_link{
+.arrow-link{
 	color:inherit;
-	font-size: .75em;
+	font-size: 1.25em;
 	text-align: center;
 	position: absolute;
-	bottom:0em;
-	left:50%;
-	transform:translateX(-50%);
-}
-
-.arrow_link p{
-	margin:0;
+	bottom:0;
+	left:0;
+	width:100%;
+	text-align: center;
 }
 
 .col2{
@@ -213,26 +195,25 @@ address a:hover{
 }
 
 .col3{
-	width:30.33%;
-	margin: 0 1.5%;
-	padding:1.5%;
+	width:33.33%;
+	padding:1.5% 3%;
 	float:left;
+	-webkit-transition: all .15s ease .15s;
+    -moz-transition: all .15s ease .15s;
+    -o-transition: all .15s ease .15s;
+	transition: all .15s ease .15s;
 }
 
 .col3 img{
-	width:50%;
+	width:45%;
 	margin:auto;
-}
-
-.col3 h3{
-	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
-	font-size: 2.4em;
-	margin:1em 0 0;
+	padding:0 5% 2%;
 }
 
 .col3 p{
+	clear: both;
 	text-align: left;
-	margin:0 0 2em;
+	margin:1em 0 2em;
 }
 
 .card{
@@ -255,6 +236,12 @@ address a:hover{
 	position: relative;
 }
 
+#landing p{	
+	font-size: 2.2em;
+	letter-spacing: .4em;
+	margin:0 0 4em;
+}
+
 #overlay{
 	background-color: rgba(244,243,253,0.65);
 	width:100%;
@@ -263,16 +250,10 @@ address a:hover{
 	top:0;
 }
 
-#gettingmarried{	
-	font-size: 2.2em;
-	letter-spacing: .4em;
-	margin:0 0 4em;
-}
-
 #rsvp-jump{
 	font-size: 2em;
 	line-height: 0;
-	background-color:#107095;
+	background-color:#0B3142;
 	color:#F4F3FD;
 	padding:1em 3em;
 	border:none;
@@ -285,8 +266,7 @@ address a:hover{
 }
 
 #rsvp-jump:hover{
-	background-color: #0B3142;
-/*	color: #F4F3FD;*/
+	background-color:#107095;
 }
 
 /*------------------------------------------ join us */
@@ -294,17 +274,7 @@ address a:hover{
 #joinus{
 	background-color: #FDFCF3;
 	color:#107095;
-}
-
-#joinus h2{
-	margin:0.1em 0 .5em;
-	color: #107095;
-}
-
-#portraits{
-	padding:0 8% 5%;
-	margin:0 auto 2em;
-	width:75%;
+	padding:5% 20.5% 10%;
 }
 
 /*------------------------------------------ event details */
@@ -325,15 +295,15 @@ address a:hover{
 	color:#D6D3F0;
 }
 
-#toast h3, 
-#afterparty h3{
+#toast h2, 
+#afterparty h2{
 	font-size:6em;
-	padding:1em 0 0.5em;
+	   padding: .7em 0 0.5em;
 }
 
-#wedding h3{
+#wedding h2{
 	font-size:11em;
-	margin:.25em 0 .15em;
+/*	margin:.25em 0 .15em;*/
 }
 
 
@@ -341,35 +311,46 @@ address a:hover{
 
 #travel{
 	background-color: #B7CDD5;
-	height: 750px;
+	padding:5% 5% 10%;
+
 }
 
-#travel h3{
-	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
-	font-size: 2.4em;
-	margin:1em 0;
+#travel h2{
+	color:#107095;
+}
+
+#travel .arrow-link{
+	color:#107095;
 }
 
 /*------------------------------------------ accommodations */
 
 #accommodations{
 	background-color: #0B3142;
-	color:#107095;
+	color: #B7CDD5;
 	height: auto;
-	padding:3em 0 0;
+	padding:5% 5% 10%;
+}
+
+#accommodations h2{
+	color:#107095;
 }
 
 #accommodations h2 + p{
-	color: #B7CDD5;
+	margin:0 auto 2.5em;
+	padding:0;
+}
+
+#accommodations p{
+	max-width: 40em;
+	padding:4em 0 0;
+	margin:auto;
+	text-align: center;
+	clear: both;
 }
 
 #accommodations .col3{
-	color:#F4F3FD;
-	-webkit-transition: all .15s ease .15s;
-    -moz-transition: all .15s ease .15s;
-    -o-transition: all .15s ease .15s;
-	transition: all .15s ease .15s;
-	height:340px;
+	height: 320px;
 }
 
 #accommodations .col3:hover{
@@ -382,9 +363,14 @@ address a:hover{
 	color:#fff;
 }
 
+#accommodations a:nth-of-type(2) .col3{
+	border-left:2px solid #107095; 
+	border-right:2px solid #107095;
+}
+
 /*------------------------------------------ rsvp & registry */
 
-#rsvp_reg{
+#rsvp-reg{
 	margin: 0;
 	padding:0;
 } 
@@ -401,6 +387,10 @@ address a:hover{
 
 #registry{
 	background-color: #B7CDD5;
+}
+
+#registry h2{
+	padding:0 0 10%
 }
 
 #registry_link{
@@ -424,36 +414,17 @@ address a:hover{
 	color: #107095;
 }
 
+/*------------------------------------------ footer */
+
+#footer{
+	color:#FDFCF3;
+}
+
 @media screen and (max-width:1190px){
 	main section{
 		height: auto;
 		width:100%; 
 		float:none;
-	}
-
-	.col3{
-		width:80%;
-		float:none;
-		margin:0 auto;
-		padding:0;
-	}
-
-	.col3:nth-of-type(3){
-		margin:0 auto 10%;
-	}
-
-	.col3 img{
-		display: block;
-		width: 37%;
-		padding: 3% 12% 0 0;
-		margin:auto;
-		float: left;
-	}
-
-	.travel_txt{
-		width: 63%;
-		padding:2% 0 0;
-		float: left;
 	}
 
 	.card{
@@ -462,12 +433,12 @@ address a:hover{
 		margin:0 auto 10%;
 	}
 
-	#portraits{
-		width:80%;
+	#joinus{
+		padding:5% 10.5% 10%;
 	}
 
-	#toast h3, 
-	#afterparty h3{
+	#toast h2, 
+	#afterparty h2{
 		font-size:11em;
 		margin:.25em 0 .15em;
 		padding: 0;
@@ -478,68 +449,86 @@ address a:hover{
 	}
 
 	#travel{
-		height:auto;
+		padding:5% 0 10%;
 	}
 
 	#accommodations{
-		padding:3em 0;
-	}
-
-	#accommodations .col3{
-		color:#F4F3FD;
-		width:60%;
-		padding:1% 6%;
-		height:auto;
-		/*min-width: 522px;*/
-		
-	}
-
-	#accommodations a:nth-of-type(2) .col3{
-		border-top:2px solid #107095; 
-		border-bottom:2px solid #107095;
-	}
-
-	#accommodations p{
-		text-align: center;
+		padding:5% 0 10%;
 	}
 }
-@media screen and (max-width:1000px){
 
+@media screen and (max-width:1000px){
 	header{
 		position: static;
 		top:0;
 		transform:none;
 		padding-top:15vh;
 	}
-	.break{
-		display: block;
-	}
-
+	
 	h1{
 		line-height: 0.5em;
 		margin:0 0 0.35em;
 	}
 
-	#joinus{
-		height:780px;
+	.break{
+		display: block;
 	}
 
-	#portraits{
-		padding:0;
+	.wrap{
+		width:60%;
+		margin:auto;
+	}
+
+	.col3{
+		width:100%;
+		float:none;
+		margin:0 auto;
+		padding:1% 6%;
+		height:auto;
+	}
+
+	.col3:nth-of-type(3){
+		margin:0 auto 10%;
+	}
+
+	.col3 img{
+		width:30%;
+	}
+
+	#joinus{
+		padding:5% 5.5% 10%;
 	}
 
 	#accommodations .col3{
-		width:80%;
+		color:#F4F3FD;
+		padding:6%;
+		height:auto;
+	}
+
+	#accommodations a:nth-of-type(2) .col3{
+		border-top:2px solid #107095; 
+		border-bottom:2px solid #107095;
+		border-right: none;
+		border-left: none;
 	}
 
 	#accommodations .col3:nth-of-type(3){
 		margin:0 auto 15%;
 	}
+
+	#accommodations p{
+		width:80%;
+		padding:1em 0 0;
+	}
 }
 
 @media screen and (max-width:811px){
-	.arrow_link{
+	.arrow-link{
 		display: none;
+	}
+
+	.wrap{
+		width: 80%;
 	}
 
 	.col2{
@@ -547,10 +536,6 @@ address a:hover{
 		float:none;
 		height: auto;
 		padding:3% 10% 12%;
-	}
-
-	.col3:nth-of-type(3){
-		margin:0 auto 15%;
 	}
 
 	.col3 img{
@@ -561,26 +546,36 @@ address a:hover{
 		float: none;
 	}
 
-	.travel_txt{
-		width: 100%;
-		padding:2% 0 0;
-		float: none;
+	#landing{
+		height: 680px;
 	}
 
-	#travel h3{
-		margin:0 0 1em;
+	#overlay{
+		height: 100%;
 	}
 
-	#portraits{
-		width:100%;
+	#joinus{
+		padding:10% 1% 15%;
 	}
 }
 
 @media screen and (max-width:600px){
+	h2{
+		font-size: 9em;
+	}
+
+	h3{
+		font-size: 2em;
+	}
+
 	figure{
 		width:100%;
 		float: none;
 		margin:5% auto 10%;
+	}
+
+	figure img{
+		width:50%;
 	}
 
 	figcaption{
@@ -601,34 +596,29 @@ address a:hover{
 		padding: 0 6%;
 	}
 
-	#joinus{
-		height: auto;
-		padding:3em 0 6em;
+	#joinus h2{
+		font-size:11em;
 	}
 
-	#toast h3, 
-	#afterparty h3{
+	#toast h2, 
+	#afterparty h2{
 		font-size:9em;
-		margin:.25em 0 .15em;
 		padding: 0;
 	}
 
-	#wedding h3{
+	#wedding h2{
 		font-size:9em;
 	}
 
 	#accommodations .col3{
 		width:100%;
-		padding: 1% 6%;
 	}
 
-	#accommodations a:nth-of-type(2) .col3{
-		border-top:none; 
-		border-bottom:none;
+	#accommodations p{
+		padding: 6% 6% 0;
 	}
-
-	h2{
-		font-size: 9em;
+	#accommodations h2 + p{
+		padding: 0 6%;
 	}
 }
 
@@ -641,6 +631,7 @@ address a:hover{
 	figcaption{
 		font-size: 8em;
 	}
+
 	.col2{
 		padding: 3% 10% 20%;
 	}
@@ -649,18 +640,27 @@ address a:hover{
     	margin: 0 auto 22%;
 	}
 
-	#gettingmarried{
+	#landing p{
 		letter-spacing: 0.2em;
 	}
 
 	#joinus h2,
-	#toast h3, 
-	#wedding h3{
+	#toast h2, 
+	#wedding h2{
 		font-size:8em;
 	}
 
 	#accommodations h2,
-	#afterparty h3{
+	#afterparty h2,
+	#footer h2{
 		font-size: 7.25em;
+	}
+
+	#accommodations h2 + p {
+		width:100%;
+	}
+
+	#accommodations p{
+		width:100%;
 	}
 }
