@@ -1,0 +1,14 @@
+body {
+    background: #ABEEFF;
+    font-family: sans-serif;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 12px;
+	font-style: italic;
+	margin-right: 150px;
+}
