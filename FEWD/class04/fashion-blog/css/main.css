@@ -134,6 +134,7 @@ body{
 	font-family: Lato;
 	padding: 54px;
 	width: 720px; 
+	display: block;
 }
 
 img{
