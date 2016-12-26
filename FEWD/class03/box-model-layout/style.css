@@ -1,0 +1,31 @@
+.navbar{
+	background-color: black;
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+.one{
+	color: #52137F;
+	margin-top: 40px;
+}
+
+.two{
+	color: #1B7F4F;
+}
+
+.three{
+	color: yellow;
+}
+
+.one, .two, .three{
+	background: tomato;
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.outer{
+	background: #B6C5D1;
+	padding: 20px; 10px;
+}

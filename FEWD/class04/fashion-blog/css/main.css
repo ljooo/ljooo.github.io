@@ -1,0 +1,139 @@
+.sartre{
+	color: #DD0000;
+	font-size: 50px;
+	font-weight: 350;
+	padding-bottom: 10px;
+}
+
+.headline{
+	color: black;
+	font-weight: 400;
+	font-size: 35px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	font-weight: 300;
+}
+
+.better{
+	color: black;
+	font-weight: 400;
+	font-size: 27px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-weight: 250;
+
+}
+.top a{
+	color: #cccccc;
+	font-size: 21px;
+	margin-bottom: 40px;
+}
+
+.top{
+	padding-right: 30px;
+	display: block;
+	font-weight: lighter;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.women:hover{
+	background-color:#aa0000;
+}
+
+.men:hover{
+	background-color:#aa0000;
+}
+
+.street:hover{
+	background-color:#aa0000;
+}
+
+.catwalk:hover{
+	background-color:#aa0000;
+}
+
+.ad:hover{
+	background-color:#aa0000;
+}
+
+.about:hover{
+	background-color:#aa0000;
+}
+
+.date{
+	color: #cccccc;
+	font-size: 35px;
+	margin-bottom: 10px;
+	font-weight: lighter;
+}
+
+.continue{
+	color:#DD0000;
+	font-size: 18px;
+	text-align: right;
+}
+
+.below a{
+	text-decoration: none;
+	padding-bottom: 20px;
+	color:#DD0000;
+	font-size: 18px;
+}
+
+.below{
+	padding-top: 45px;
+}
+
+.line{
+	color: #444444;
+}
+
+.home2:hover{
+	background-color: black;
+}
+
+.women2:hover{
+	background-color: black;
+}
+
+.home2:hover{
+	background-color: black;
+}
+
+.home2:hover{
+	background-color: black;
+}
+
+.home2:hover{
+	background-color: black;
+}
+
+.home2:hover{
+	background-color: black;
+}
+
+.copyright{
+	color: #cccccc;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+hr{
+	color: #cccccc;
+}
+
+p{
+	font-size: 18px;
+	color: #444444;
+	line-height: 1.5em;
+}
+
+body{
+	font-family: Lato;
+	padding: 54px;
+}
+
+img{
+	width: 720px; 
+}
