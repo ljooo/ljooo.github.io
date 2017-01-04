@@ -1,0 +1,72 @@
+body{
+	font-family: "News706BT-RomanC",Georgia, sans-serif;
+}
+
+h1{
+	text-align: center;
+	font-size: 69px;
+}
+
+.numbers{
+	font-size: 300px;
+}
+
+.first{
+	color: rgb(4,138,151);
+	padding-left: 100px;
+}
+
+.second{
+	color: rgb(255, 216, 0);
+	padding-left: 150px;
+}
+
+.third{
+	color: rgb(229, 229, 229);
+	padding-left: 100px;
+}
+
+.words{
+	font-size: 20px;
+	color: rgb(0,0,100);
+}
+
+.one{
+	padding-left: 100px;	
+}
+
+.two{
+	padding-left: 100px;
+}
+
+.three{
+	padding-left: 150px;
+}
+
+.skills{
+	font-size: 30px;
+	color: #9c9c9c;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-left: 90px;
+	color: rgb(0,0,100);
+	margin-bottom: 100px;
+}
+
+hr{
+	color: #9c9c9c;
+	border-style: dashed;
+	font-weight: 1px;
+	margin: 30px 0;
+}
+
+.list{
+	font-size: 20px;
+	color: rgb(4,138,151);
+
+}
+
+
+
+
+
