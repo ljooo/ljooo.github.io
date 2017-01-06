@@ -8,7 +8,6 @@ body{
 
 .wrapper{
 	width: 1000px;
-	background-image: url("../img/coworking.jpg");
 }
 
 header{
@@ -70,20 +69,72 @@ nav{
 }
 
 .section-2{
-	height: 200px;
+	background-image: url("../img/coworking.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid black;
+}
+
+.cube{
+	height: 220px;
 	width: 300px;
-	background-color: #ccc;
-	opacity: .8;
+	background-color: rgba(238,238,238,.8);
 	float: right;
 	padding: 20px;
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 20px;
 }
 
 .box-header{
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 900;
+	margin-bottom: 0px;
 }
 
 .box-text{
-	line-height: 20px;
+	line-height: 24px;
 	font-size: 15px;
+	padding-top: 0px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.button{
+	background-color: yellow;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 5px;
+	display: block; 
+	text-decoration: none;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+}
+
+.section-3{
+	background-color: rgb(238,238,238);
+	padding: 20px 0px;
+}
+
+.col{
+	float: left;
+	height: 200px;
+	width: 300px;
+	padding: 15px;
+}
+
+.col:nth-of-type(2){
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;; 
+}
+
+
+.clearfix:after{
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}	
+
