@@ -1,0 +1,70 @@
+.wrapper{
+	width: 800px;
+	opacity: .2;
+/*	background-color: black;*/
+}
+
+header{
+	height:200px;
+	background-color: maroon;
+	margin: 10px;
+}
+
+/*main{
+	overflow: hidden;
+}*/
+
+.apple{
+	width: 380px;
+	height: 400px;
+	background-color: #D64933;
+	float: left;
+	margin: 10px;
+}
+
+.lemon{
+	width: 380px;
+	height: 400px;
+	background-color: #efee94;
+	float: left;
+	margin: 10px;
+}
+
+.left{
+	height:400px;
+	background-color: green;
+	width: 180px;
+	float:left;
+	margin: 10px;
+}
+
+.middle{
+	height: 400px;
+	width: 380px;
+	background-color: gray;
+	float: left;
+	margin: 10px;
+}
+
+.right{
+	height: 400px;
+	background-color: blue;
+	width: 180px;
+	float:left;
+	margin: 10px;
+}
+
+footer{
+	height: 200px;
+	background-color: orange;
+	margin: 10px;
+	/*clear: both;*/
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}	

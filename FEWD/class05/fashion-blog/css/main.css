@@ -106,7 +106,9 @@
 }
 
 hr{
-	color: #cccccc;
+	border:none;
+	background-color: #ccc;
+	height: 2px;
 }
 
 p{
