@@ -73,7 +73,6 @@ nav{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	border: 2px solid black;
 }
 
 .cube{
@@ -95,22 +94,24 @@ nav{
 .box-text{
 	line-height: 24px;
 	font-size: 15px;
-	padding-top: 0px;
+	padding-top: 5px;
 	margin-bottom: 30px;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
-.button{
+.button-1{
 	background-color: yellow;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 18px;
-	padding: 5px;
+	font-size: 14px;
+	padding: 9px;
 	display: block; 
 	text-decoration: none;
 	color: black;
 	font-family: 'Oswald', sans-serif;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
 }
 
 .section-3{
@@ -120,7 +121,7 @@ nav{
 
 .col{
 	float: left;
-	height: 200px;
+	height: 180px;
 	width: 300px;
 	padding: 15px;
 }
@@ -128,6 +129,51 @@ nav{
 .col:nth-of-type(2){
 	border-right: 1px solid gray;
 	border-left: 1px solid gray;; 
+}
+
+.button-2{
+	background-color: #C6C6C6;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 17px;
+	padding-top: 8px;
+	display: block; 
+	text-decoration: none;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	width: 280px;
+	margin-left: 8px;
+	margin-top: 15px;
+	height: 35px;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.col h4{
+	font-size: 18px;
+	font-family: 'Merriweather', serif;
+	margin: 7px;
+	margin-left: 13px;
+}
+
+.col p{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 5px 15px;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.footer{
+	background-color: black;
+	color: white;
+	height: 40px;
+	margin: 0px;
+	padding-top: 18px;
+	padding-left: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
 }
 
 
