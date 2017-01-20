@@ -1,6 +1,54 @@
 // 1. Besure to write your code within the $(document).ready(...)
 // 2. Add .click() event handlers for each of the boxes:
 // - A) boxes #a10, #a20, and #a30 should each add 10, 20, and 30, respectively, to the value in the center box, #out
+
+$('#a10').click(function () {
+	var out = $('#out').html()
+	$('#out').html(parseInt(out) + 10);	
+})
+
+$('#a20').click(function () {
+	var out = $('#out').html()
+	$('#out').html(parseInt(out) + 20);	
+})
+
+$('#a30').click(function () {
+	var out = $('#out').html()
+	$('#out').html(parseInt(out) + 30);	
+})
+
+$('#n10').click(function () {
+	var out = $('#out').html()
+	$('#out').html(parseInt(out) - 10);	
+})
+
+$('#n20').click(function () {
+	var out = $('#out').html()
+	$('#out').html(parseInt(out) - 20);	
+
+})	
+
+$('#n30').click(function () {
+	var out = $('#out').html()
+	$('#out').html(parseInt(out) - 30);	
+})
+
+$('#red').click(function () {
+	var out = $('#out').css('background-color', 'red');
+})
+
+$('#blue').click(function () {
+	var out = $('#out').css('background-color', 'blue');
+})
+
+$('#out').click(function () {
+	var out = $('#out').css('background-color', 'white')
+	var count = 0;
+	$('#out').html(count);
+})
+
+
+
 // - B) boxes #n10, #n20, and #n30 should each subtract 10, 20, and 30, respectively, from the value in the center box, #out
 // - C) #red and #blue should change the background color of #out to red and blue, respectively
 // - D) #out should change the background of #out to white, and set the value back to zero
