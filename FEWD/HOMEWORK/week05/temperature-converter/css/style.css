@@ -1,13 +1,25 @@
 body{
-	margin: 100px;
+	margin-left: 100px;
 	font-family: 'Cormorant', serif;
+}
+
+aside{
+	border-right: 3px solid black;
+	margin-right: 100px;
+	height: 600px;
+	margin-top: 0px;
 }
 
 h1{
 	font-size: 48px;
 	font-weight: 700px; 
+	padding-bottom: 40px;
 }
 
+hr{
+	border: 1px dotted black;
+	margin-bottom: 40px;
+}
 
 label[for=cel]{
 	margin-right: 20px;
@@ -19,20 +31,26 @@ label[for=far]{
 
 
 #cel{
-	margin-right: 100px;
+	margin-right: 80px;
 	border: 2px solid black;
 	height: 100px;
+	width: 150px;
 	margin-bottom: 100px;
 }
 
 #far{
 	margin-left: 20px;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 	border: 2px solid black;
 	height: 200px;
 	width: 100px;
 }
 
+input{
+	font-size: 30px;
+	text-align: center;
+	background-color: #B4C5E4;
+}
 
 #convertFartoCel {
 	margin-right: 100px;
