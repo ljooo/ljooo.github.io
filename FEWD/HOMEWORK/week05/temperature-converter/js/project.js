@@ -27,15 +27,14 @@ $('#convert').click(function(){
 	var cel = parseInt($('#cel').val());	
 	var far = parseInt($('#far').val());
 
-	if (far != null){
-		parseInt($('#far').val());
-		$('#cel').val((far-32)/1.8);
-		
+	console.log(far, cel);
+
+	if (!isNaN(far)){
+		$('#cel').val((far-32)/1.8);	
 	}
 
-	if (cel != null){
+	if (!isNaN(cel)){
 		$('#far').val((cel*1.8)+32);
-		parseInt($('#cel').val());
 	}	
 	
 $('#reset').click(function() {
