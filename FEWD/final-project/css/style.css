@@ -30,16 +30,23 @@ h1{
 	position: absolute;
 }
 
+#email, #password{
+	border: 2px solid black;
+	width: 144px;
+}
+
 #input-person, #input-place, #input-emotion{
 	padding: 25px;
 	border: 2px solid white;
-	width: 200px;
+	width: 250px;
+	margin-top: 20px;
+	line-height: 20px;
 }
 
-p{
-	margin-top: 4px;
-	color: #999D9E;
+input{
+	color: #435058;
 }
+
 
 .sidetext{
 	width: 700px;
