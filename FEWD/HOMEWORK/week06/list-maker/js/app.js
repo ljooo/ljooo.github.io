@@ -29,10 +29,10 @@ $(document).ready(function () {
 	}
 	} 
 
-	$('#newItem').click(function(){
-		var clickedItem = ('#newItem').val();
-		$(this).remove(clickedItem);
-		console.log(clickedItem)
+	$('ul').on('click', 'li', function(){
+		// var clickedItem = ('#newItem').val();
+		$(this).remove();
+
 
 	})
 })

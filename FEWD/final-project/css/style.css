@@ -33,6 +33,7 @@ h1{
 #email, #password{
 	border: 2px solid black;
 	width: 144px;
+	height: 30px;
 }
 
 #input-person, #input-place, #input-emotion{
@@ -40,11 +41,12 @@ h1{
 	border: 2px solid white;
 	width: 250px;
 	margin-top: 20px;
-	line-height: 20px;
+	height: 20px;
 }
 
 input{
 	color: #435058;
+	font-size: 10px;
 }
 
 
