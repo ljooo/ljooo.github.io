@@ -4,6 +4,8 @@
 
 // Instructions:
 // 1. Attach a change event to #city-type;
+
+
 // 2. Associate the above change event with an anonymous function
 // 3. Inside this anonymous function, do the following:
 // 4. Create a variable, city, that stores the selected value of #city-type (hint: use .val())
@@ -18,5 +20,11 @@
 
 
 $(document).ready(function() {
+	$('#city-type').change(function(){
+		var city = $('#city-type').val()
+		$('body').removeClass();
+		$('body').addClass(city);
+		console.log(city);
+})
 
 });

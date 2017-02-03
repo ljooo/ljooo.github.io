@@ -1,3 +1,12 @@
-$(document).ready(function () {
+$(document).ready(function() {
+
+	$('#myForm').submit(function(event){
+		event.preventDefault();
+	})
+
+	$('a').click(function()(event){
+		event.preventDefault();	
+		
+	})
 
 })
