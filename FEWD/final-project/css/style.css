@@ -1,8 +1,8 @@
 
 body{
-	height: 1000px;
+	/*height: 1000px;
 	overflow: hidden;
-	margin-bottom: 20px;
+*//*	margin-bottom: 20px;*/
 }
 
 h1{
@@ -10,9 +10,9 @@ h1{
 	font-weight: 100;
 	color: white;
 	background-color: black;
-	padding: 50px;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	padding: 4%;
+	margin-bottom: 0%;
+	margin-top: 0%;
 	font-family: 'Lato', sans-serif;
 	opacity: .8;
 
@@ -22,26 +22,26 @@ h1{
 	background-color: #D8DDDE;
 	float: left;
 	clear: left;
-	width: 400px;
+	width: 33%;
 	height: 100%;
 	display: inline-block;
-	padding-top: 80px;
-	padding-left: 80px;
+	padding-top: 7%;
+	padding-left: 7%;
 	position: absolute;
 }
 
 #email, #password{
 	border: 2px solid black;
-	width: 144px;
-	height: 30px;
+	width: 36%;
+	height: 4%;
 }
 
 #input-person, #input-place, #input-emotion{
 	padding: 25px;
 	border: 2px solid white;
-	width: 250px;
-	margin-top: 20px;
-	height: 20px;
+	width: 62%;
+	margin-top: 5%;
+	height: 5%;
 }
 
 input{
@@ -51,8 +51,10 @@ input{
 
 
 .sidetext{
-	width: 700px;
+	width: 70%;
 	float: right;
+	text-align: right;
+	margin-left: 50%;
 }
 
 h2{
@@ -60,10 +62,10 @@ h2{
 	font-size: 70px;
 	line-height: 1.1em;
 	font-weight: 900;
-	padding-left: 60px;
-	padding-right: 90px;
-	margin-right: 40px;
-	margin-top: 20px;
+	padding-left: 15%;
+	padding-right: 10%;
+	margin-right: 2%;
+	margin-top: 5%;
     word-wrap: break-word;
     background-image: url('images/pic1.jpg');
 

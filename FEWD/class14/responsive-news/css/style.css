@@ -108,5 +108,15 @@ p {
 	#container {
 		width: 100%;
 	}
+
+	#articles, #side-column{
+		float:none;
+		width: 100%		
+	}
+
+	h1,h2, h3{
+		text-align: center
+	}
 }
 
+@media()
