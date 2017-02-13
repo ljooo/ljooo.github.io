@@ -193,12 +193,11 @@ nav{
 
 @media screen and (max-width: 1002px) {
 		.cube{
-	height: auto;
-	width: 100%;
-	background-color: rgba(238,238,238,.8);
+	height: 200px;
+	width: 95%;
 	float: none;
-	padding: 2% 25%;
-	margin: 0%;
+	/*padding: 2% 25%;*/
+	margin: 2% 2%;
 	/*border: 2px solid black;*/
 }
 
