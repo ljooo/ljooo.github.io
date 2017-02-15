@@ -3,6 +3,7 @@ $(document).ready(function() {
 	
 	$('#submit').click(function(){
 		submitButton = submitButton + 1;
+		$('.quote').remove();
 	
 		
 	if (submitButton == 1) {
