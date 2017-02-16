@@ -3,9 +3,7 @@ $(document).ready(function() {
 
     $('#submit').click(function(){
 
-      // var searchTerm = valueofsearchinput
-      // swap out helicoptering with searchTerm
-
+      // var searchTerm = valueofsearchinput;
       listMessages('me', 'helicoptering', listMessageCallback)
     })
 
@@ -15,18 +13,18 @@ $(document).ready(function() {
       var getPageOfMessages = function(request, result) {
           request.execute(function(resp) {
             result = result.concat(resp.messages);
-            var nextPageToken = resp.nextPageToken;
+            // var nextPageToken = resp.nextPageToken;
             // if (nextPageToken) {
             //   request = gapi.client.gmail.users.messages.list({
             //     'userId': userId,
             //     'pageToken': nextPageToken,
             //     'q': query
             //   });
-              // getPageOfMessages(request, result);
+            //   getPageOfMessages(request, result);
             // } else {
               callback(result);
-            // }
-          });
+            })
+          // });
         };
 
       var initialRequest = gapi.client.gmail.users.messages.list({
@@ -48,8 +46,8 @@ $(document).ready(function() {
 
     function getMessageCallback(result){
       console.log(result)
-
       $('#content').html(result.snippet);
+      // $('#content').app
     }
 
     function getMessage(userId, messageId, callback) {
