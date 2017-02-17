@@ -3,6 +3,7 @@ $(document).ready(function() {
 
     $('#submit').click(function(){
       // var searchTerm = valueofsearchinput;
+      // $('#submit').val(searchTerm);
       listMessages('me', 'helicoptering', listMessageCallback)
     })
 
@@ -44,6 +45,7 @@ $(document).ready(function() {
     function getMessageCallback(result){
       console.log(result)
       $('#content').html(result.snippet);
+      $('#content').css('font-size', '20px');
       // $('#content').app
     }
 
