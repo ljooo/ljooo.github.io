@@ -1,0 +1,11 @@
+.box{
+	background-color: blue;
+	width: 50vw;
+	height: 50vh;
+}
+
+.secondbox{
+	background-color: pink;
+	width: 50vw;
+	height: 50vh;
+}

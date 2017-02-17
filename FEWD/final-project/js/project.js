@@ -2,12 +2,9 @@ $(document).ready(function() {
     var submitButton = 0;
 
     $('#submit').click(function(){
-
       // var searchTerm = valueofsearchinput;
       listMessages('me', 'helicoptering', listMessageCallback)
     })
-
-
 
     function listMessages(userId, query, callback) {
       var getPageOfMessages = function(request, result) {
@@ -35,7 +32,7 @@ $(document).ready(function() {
       getPageOfMessages(initialRequest, []);
     }
     
-
+// this is where you change what is called back
     function listMessageCallback(result){
       console.log(result[0].id);
       var messageId = result[0].id;
