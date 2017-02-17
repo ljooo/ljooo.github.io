@@ -1,7 +1,7 @@
 
 body{
 	/*font-size: 60px;*/
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 h1{
@@ -66,7 +66,7 @@ h1{
 .sidetext{
 	width: 70%;
 	height: 100vh;
-	float: right;
+	/*float: right;*/
 	text-align: right;
 	margin-left: 50%;
 	display: flex;
@@ -74,10 +74,10 @@ h1{
 	background-size: cover;
 }
 
-#content: {
+#content {
 	font-size: 20px;
-	float: right;
-
+	width: 50%;
+	right: 0;
 }
 
 h2{

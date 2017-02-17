@@ -1,13 +1,24 @@
 $(document).ready(function() {
     var submitButton = 0;
 
-    $('#submit').click(function(){
-      // var searchTerm = valueofsearchinput;
-      // $('#submit').val(searchTerm);
-      listMessages('me', 'helicoptering', listMessageCallback)
-    })
+  function randomPicture (){
+    min = Math.ceil(1);
+    max = Math.floor(13);
+    var pictureNumber = Math.floor(Math.random() * (max - min)) + min;
+    $('.sidetext').css('background-image', 'url(images/pic'+pictureNumber+'.jpg)');
+    console.log(pictureNumber);
+  }
 
+    $('#submit').click(function(){
+      randomPicture();
+      var searchTerm = $('#input-person').val();
+      listMessages('me', searchTerm, listMessageCallback);
+       submitButton = submitButton + 1;
+     $('.quote').remove();  
+    });
+   
     function listMessages(userId, query, callback) {
+      // $('#content').css('left', $('sidetext'.offsetLeft));
       var getPageOfMessages = function(request, result) {
           request.execute(function(resp) {
             result = result.concat(resp.messages);
@@ -28,6 +39,7 @@ $(document).ready(function() {
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
         'q': query
+         // 'q': "before:2014/01/01"
       });
 
       getPageOfMessages(initialRequest, []);
@@ -52,48 +64,14 @@ $(document).ready(function() {
     function getMessage(userId, messageId, callback) {
       var request = gapi.client.gmail.users.messages.get({
         'userId': userId,
-        'id': messageId
+        'id': messageId,
+        'nonce': Math.random()
       });
       request.execute(callback);
     }
 
-    // $('#submit').click(function(){
-    //  submitButton = submitButton + 1;
-    //  $('.quote').remove();       
-    
-        
-    //  if (submitButton == 1) {
-    //      $('.sidetext').css('background-image', 'url(images/pic1.jpg)'); 
-    //          $('.quote').removeClass();
-
-    //  } else if (submitButton == 2) {
-    //  $('.sidetext').css('background-image', 'url(images/pic2.jpg)'); 
-    //  } else if (submitButton == 3) {
-    //      $('.sidetext').css('background-image', 'url(images/pic3.jpg)'); 
-    //  } else if (submitButton == 4) {
-    //  $('.sidetext').css('background-image', 'url(images/pic4.jpg)'); 
-    //  } else if (submitButton == 5) {
-    //      $('.sidetext').css('background-image', 'url(images/pic5.jpg)'); 
-    //  } else if (submitButton == 6) {
-    //  $('.sidetext').css('background-image', 'url(images/pic6.jpg)'); 
-    //  } else if (submitButton == 7) {
-    //      $('.sidetext').css('background-image', 'url(images/pic7.jpg)'); 
-    //  } else if (submitButton == 8) {
-    //  $('.sidetext').css('background-image', 'url(images/pic8.jpg)'); 
-    //  } else if (submitButton == 9) {
-    //      $('.sidetext').css('background-image', 'url(images/pic9.jpg)'); 
-    //  } else if (submitButton == 10) {
-    //  $('.sidetext').css('background-image', 'url(images/pic10.jpg)'); 
-    //  } else if (submitButton == 11) {
-    //      $('.sidetext').css('background-image', 'url(images/pic11.jpg)'); 
-    //  } else if (submitButton == 12) {
-    //  $('.sidetext').css('background-image', 'url(images/pic12.jpg)'); 
-    //  } else if (submitButton == 13) {
-    //      $('.sidetext').css('background-image', 'url(images/pic13.jpg)');
-    //  }
-
-    // })
-})
+  
+  })
 
     
 
