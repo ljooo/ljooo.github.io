@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   function randomPicture (){
     min = Math.ceil(1);
-    max = Math.floor(13);
+    max = Math.floor(14);
     var pictureNumber = Math.floor(Math.random() * (max - min)) + min;
     $('.sidetext').css('background-image', 'url(images/pic'+pictureNumber+'.jpg)');
     console.log(pictureNumber);
@@ -15,10 +15,11 @@ $(document).ready(function() {
       listMessages('me', searchTerm, listMessageCallback);
        submitButton = submitButton + 1;
      $('.quote').remove();  
+     $('#content').css('display', 'relative', 'bottom', '0');
     });
    
     function listMessages(userId, query, callback) {
-      // $('#content').css('left', $('sidetext'.offsetLeft));
+      $('#content').css('left', $('sidetext'.offsetLeft));
       var getPageOfMessages = function(request, result) {
           request.execute(function(resp) {
             result = result.concat(resp.messages);
@@ -39,7 +40,7 @@ $(document).ready(function() {
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
         'q': query
-         // 'q': "before:2014/01/01"
+          // 'q': 'older_than:1y'
       });
 
       getPageOfMessages(initialRequest, []);

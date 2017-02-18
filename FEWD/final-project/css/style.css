@@ -1,7 +1,8 @@
 
 body{
-	/*font-size: 60px;*/
-/*	overflow: hidden;*/
+	font-size: 60px;*/
+	font-family: 'Lato', sans-serif;
+	overflow: hidden;
 }
 
 h1{
@@ -64,9 +65,9 @@ h1{
 }
 
 .sidetext{
-	width: 70%;
+	width: 66%;
 	height: 100vh;
-	/*float: right;*/
+	float: right;
 	text-align: right;
 	margin-left: 50%;
 	display: flex;
@@ -76,9 +77,16 @@ h1{
 
 #content {
 	font-size: 20px;
-	width: 50%;
+	width: 100%;
 	right: 0;
+	position: relative;
+	bottom: 0; 
 }
+
+/*.quote{
+	font-size: 60px;
+
+}*/
 
 h2{
 	font-family: 'Karla', sans-serif;
