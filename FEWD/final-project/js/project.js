@@ -15,7 +15,7 @@ $(document).ready(function() {
       listMessages('me', searchTerm, listMessageCallback);
        submitButton = submitButton + 1;
      $('.quote').remove();  
-     $('#content').css('display', 'relative', 'bottom', '0');
+  
     });
    
     function listMessages(userId, query, callback) {
@@ -39,18 +39,21 @@ $(document).ready(function() {
 
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
-        'q': query
-          // 'q': 'older_than:1y'
+        'q': query +' -unsubscribe'
+        // 'q': 'older_than:1y'
       });
 
-      getPageOfMessages(initialRequest, []);
+      // var Request = gapi.client.gmail.users.messages.list({
+      //     'q': 'older_than:1y'
+      // });
+
+      getPageOfMessages(initialRequest,[]);
     }
     
 // this is where you change what is called back
     function listMessageCallback(result){
       console.log(result[0].id);
       var messageId = result[0].id;
-
       getMessage('me', messageId, getMessageCallback)
 
     }
@@ -59,6 +62,7 @@ $(document).ready(function() {
       console.log(result)
       $('#content').html(result.snippet);
       $('#content').css('font-size', '20px');
+      $('#content').css('bottom-margin', '0');
       // $('#content').app
     }
 
