@@ -11,9 +11,9 @@ h1{
 	font-weight: 100;
 	color: white;
 	background-color: black;
-	padding: 5%;
+	padding: 4%;
 	margin-bottom: 0%;
-	margin-top: 20px;
+	margin-top: 0%;
 	font-family: 'Lato', sans-serif;
 	opacity: .8;
 
@@ -79,9 +79,13 @@ h1{
 #content {
 	font-size: 20px;
 	width: 100%;
-	right: 0;
+	padding-right: 10%;
 	position: relative;
-	bottom: 0; 
+	bottom: -30; 
+	padding-left: 50%;
+	padding-bottom: 0%;
+	color: white;
+	font-family: 'Lato', sans-serif;
 }
 
 /*.quote{

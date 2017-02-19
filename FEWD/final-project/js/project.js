@@ -11,7 +11,9 @@ $(document).ready(function() {
 
     $('#submit').click(function(){
       randomPicture();
-      var searchTerm = $('#input-person').val();
+      var searchOne = $('#input-person').val();
+      // var searchTwo = $('#input-place').val();
+      var searchTerm = searchOne 
       listMessages('me', searchTerm, listMessageCallback);
        submitButton = submitButton + 1;
      $('.quote').remove();  
@@ -39,13 +41,11 @@ $(document).ready(function() {
 
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
-        'q': query +' -unsubscribe'
-        // 'q': 'older_than:1y'
+        'q': query + ' -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
+
       });
 
-      // var Request = gapi.client.gmail.users.messages.list({
-      //     'q': 'older_than:1y'
-      // });
+    
 
       getPageOfMessages(initialRequest,[]);
     }
