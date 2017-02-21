@@ -1,5 +1,14 @@
+
+$('h1').typeIt({
+     strings: ["This is how we remember.", "This is how we forget."],
+     speed: 50,
+     breakLines: false,
+});
+
+
 $(document).ready(function() {
     var submitButton = 0;
+    var searchTerm;
 
   function randomPicture (){
     min = Math.ceil(1);
@@ -13,7 +22,7 @@ $(document).ready(function() {
       randomPicture();
       var searchOne = $('#input-person').val();
       // var searchTwo = $('#input-place').val();
-      var searchTerm = searchOne 
+      searchTerm = searchOne 
       listMessages('me', searchTerm, listMessageCallback);
        submitButton = submitButton + 1;
      $('.quote').remove();  
@@ -41,8 +50,7 @@ $(document).ready(function() {
 
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
-        'q':  query + ' -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
-
+        'q': query + ' ' + searchTerm + '  -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
       });
 
     
