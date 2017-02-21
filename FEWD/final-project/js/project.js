@@ -9,13 +9,16 @@ $('h1').typeIt({
 $(document).ready(function() {
     var submitButton = 0;
     var searchTerm;
+    var messagesResult;
+    var messagesResultMessageToSearch = 0;
+    var listMessagesResult;
 
   function randomPicture (){
     min = Math.ceil(1);
     max = Math.floor(14);
     var pictureNumber = Math.floor(Math.random() * (max - min)) + min;
     $('.sidetext').css('background-image', 'url(images/pic'+pictureNumber+'.jpg)');
-    console.log(pictureNumber);
+    // console.log(pictureNumber);
   }
 
     $('#submit').click(function(){
@@ -43,6 +46,7 @@ $(document).ready(function() {
             //   });
             //   getPageOfMessages(request, result);
             // } else {
+
               callback(result);
             })
           // });
@@ -50,40 +54,65 @@ $(document).ready(function() {
 
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
-        'q': query + ' ' + searchTerm + '  -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
+        'q': query + '+' + searchTerm + '  -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
       });
-
-    
 
       getPageOfMessages(initialRequest,[]);
     }
     
-// this is where you change what is called back
     function listMessageCallback(result){
-      console.log(result[0].id);
-      var messageId = result[0].id;
+      // console.log(result[0].id);
+      listMessagesResult = result;
+      var messageId = result[messagesResultMessageToSearch].id;
       getMessage('me', messageId, getMessageCallback)
 
-    }
-
-    function getMessageCallback(result){
-      console.log(result)
-      $('#content').html(result.snippet);
-      $('#content').css('font-size', '20px');
-      $('#content').css('bottom-margin', '0');
-      // $('#content').app
     }
 
     function getMessage(userId, messageId, callback) {
       var request = gapi.client.gmail.users.messages.get({
         'userId': userId,
         'id': messageId,
+        'format': 'full',
         'nonce': Math.random()
       });
       request.execute(callback);
     }
 
-  
+    function getMessageCallback(result){
+      console.log(result.payload);
+
+      if (!result.payload.parts[0].body.data) {
+
+         messagesResultMessageToSearch += 1;
+
+         var messageId = listMessagesResult[messagesResultMessageToSearch].id;
+         getMessage('me', messageId, getMessageCallback) 
+
+      } else {
+        var messageBody = atob(result.payload.parts[0].body.data.replace(/-/g, '+').replace(/_/g, '/') );
+     
+        console.log(messageBody);
+        var searchTermPosition = messageBody.search(searchTerm);
+
+        if (searchTermPosition < 0) {
+           messagesResultMessageToSearch += 1;
+
+           var messageId = listMessagesResult[messagesResultMessageToSearch].id;
+           getMessage('me', messageId, getMessageCallback) 
+
+        } else {
+          var messageBodySubstring = messageBody.slice(searchTermPosition-50, searchTermPosition+50);
+
+          console.log(messageBodySubstring);
+          console.log(searchTermPosition);
+          // $('#content').css('font-size', '20px');
+          // $('#content').css('bottom-margin', '0');
+          // $('#content').app
+
+          $('#content').html('[' + messageBodySubstring + ']');
+        }
+      }
+    }  
   })
 
     
