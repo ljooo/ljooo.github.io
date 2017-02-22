@@ -1,8 +1,6 @@
 body{
 	padding: 50px;
+	font-family: courier;
+	color: teal;
 }
 
-.sample{
-	color:teal;
-	font-family: courier; 
-	padding-left: 10px;

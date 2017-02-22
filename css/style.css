@@ -1,0 +1,118 @@
+
+body{
+	font-size: 60px;*/
+	font-family: 'Lato', sans-serif;
+	overflow: hidden;
+}
+
+h1{
+	font-size: 1.3em;
+	display: block;
+	font-weight: 100;
+	color: white;
+	background-color: black;
+	padding: 3%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	font-family: 'Lato', sans-serif;
+	opacity: .8;
+
+}
+
+.input-buttons{
+	background-color: #D8DDDE;
+	float: left;
+	clear: left;
+	width: 33%;
+	height: 100%;
+	display: inline-block;
+	padding-top: 7%;
+	padding-left: 7%;
+	position: absolute;
+	font-family:'Lato', sans-serif;
+	color: #435058;
+	font-size: .16em;
+}
+
+#authorize-button, #signout-button{
+	border: 2px solid black;
+	width: 36%;
+	height: 5%;
+	padding-left: 1%;
+}
+
+#input-person, #input-place, #input-emotion{
+	padding: 5%;
+	border: 2px solid white;
+	width: 64%;
+	margin-top: 5%;
+	text-align: left;
+	background-color: white;
+}
+
+#submit{
+	display: block;
+	padding: 5%;
+	margin-top: 5%;
+	background-color:#D8DDDE;
+	border: 2px solid white;
+	transition: ease-in 1s;
+}
+
+#submit:hover {
+	box-shadow: inset 0 100px 0 0 #31302B;
+    color: #FFF;
+
+}
+
+.sidetext{
+	width: 66%;
+	height: 100vh;
+	float: right;
+	text-align: right;
+	margin-left: 50%;
+	display: flex;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content {
+	font-size: 20px;
+	width: 100%;
+	padding-right: 10%;
+	position: relative;
+	bottom: -30; 
+	padding-left: 50%;
+	padding-right: 20%;
+	padding-top: 35%;
+	text-align: justify;
+	color: white;
+	font-weight: 400;
+	font-family: 'Merriweather', sans-serif;
+}
+
+/*.quote{
+	font-size: 60px;
+
+}*/
+
+h2.quote{
+	font-family: 'Karla', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	font-weight: 900;
+	padding-left: 15%;
+	padding-right: 10%;
+	margin-right: 2%;
+	margin-top: 5%;
+    word-wrap: break-word;
+    position: absolute;
+    left: 50;
+}
+
+@media screen and (max-width: 458px){
+	h1{
+		font-size: 1em;
+	}
+}
+

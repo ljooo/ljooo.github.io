@@ -1,0 +1,23 @@
+user inputs email and password into resepctive boxes
+
+mouse.over {
+	expand box (like: http://thed4d.com/about/)
+}
+
+
+user inputs three search words into boxes. gmail searches inbox for specific words using '+'' search query
+
+if{
+	three words match, pull that sentence
+else if{
+	two words match, pull sentence
+else if{
+	one word matches, pull sentence
+}
+}
+}
+
+pull image from arsenal of pictures
+
+overlay text over picture
+

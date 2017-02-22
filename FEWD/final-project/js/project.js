@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   function randomPicture (){
     min = Math.ceil(1);
-    max = Math.floor(14);
+    max = Math.floor(16);
     var pictureNumber = Math.floor(Math.random() * (max - min)) + min;
     $('.sidetext').css('background-image', 'url(images/pic'+pictureNumber+'.jpg)');
     // console.log(pictureNumber);
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
-        'q': query + '+' + searchTerm + '  -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
+        'q': query + '+' + searchTerm + ' ->' + '  -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
       });
 
       getPageOfMessages(initialRequest,[]);
