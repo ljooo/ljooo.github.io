@@ -23,9 +23,9 @@ $(document).ready(function() {
 
     $('#submit').click(function(){
       randomPicture();
-      var searchOne = $('#input-person').val();
+      var searchTerm = $('#input-person').val();
       // var searchTwo = $('#input-place').val();
-      searchTerm = searchOne 
+      // searchTerm = searchOne 
       listMessages('me', searchTerm, listMessageCallback);
        submitButton = submitButton + 1;
      $('.quote').remove();  
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
       var initialRequest = gapi.client.gmail.users.messages.list({
         'userId': userId,
-        'q': query + '+' + searchTerm + ' ->' + '  -unsubscribe' + ' -account' +  ' -track' + ' older_than:2yr' 
+        'q': query + '+' + searchTerm + ' ->' + '  -unsubscribe' + ' -account' +  ' -track' + ' older_than:1yr' 
       });
 
       getPageOfMessages(initialRequest,[]);

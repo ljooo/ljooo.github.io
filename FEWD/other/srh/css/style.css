@@ -1,6 +1,15 @@
 body{
-	padding: 50px;
+	padding-left: 50px;
+	padding-top: 50px;
 	font-family: courier;
-	color: teal;
+	padding-right: 100px;
+	text-align: justify;
 }
 
+.one{
+	color:teal;
+}
+
+.two{
+	color: black;
+}
