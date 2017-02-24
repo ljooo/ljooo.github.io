@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   function randomPicture (){
     min = Math.ceil(1);
-    max = Math.floor(16);
+    max = Math.floor(21);
     var pictureNumber = Math.floor(Math.random() * (max - min)) + min;
     $('.sidetext').css('background-image', 'url(images/pic'+pictureNumber+'.jpg)');
     // console.log(pictureNumber);
